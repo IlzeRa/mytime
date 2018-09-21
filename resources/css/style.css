@@ -4,11 +4,15 @@ body {
   font-size: 17px;
   }
 
+  *{
+  margin: 0px;
+  padding: 0px;
+}
 
 /* Header*/
-
 .header {
   border-bottom: 1px solid black;
+  background-color: white;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
@@ -19,7 +23,6 @@ body {
   width: 100%;
   margin: 0px;
   height:80px;
-  background-color: white;
 }
 
 .logo {
@@ -61,25 +64,46 @@ body {
 }
 
 /*Main section*/
-
+main{
+  position: relative;
+}
 .container{
   font-family: Georgia, sans-serif;
-  width: 1286px;
-  overflow: scroll;
-  position: relative;
-  top: 75px;
+  width: 1230px;
+  height:1000px;
+  margin: 0px 0px 75px 0px;
+  right:0px;
+  padding-top: 115px;
   display:flex;
   flex-direction: row;
-    }
+  justify-content:space-between;
+  }
 
+ /*Large column*/
 .large {
   display: inline-flex;
   width: 630px;
+  height:1000px;
   border:1 solid black;
   flex-direction: column;
-  margin-right: 30px;
   margin-top: 35px;
-}
+    margin: 0px;
+  }
+
+.image{
+  background-image: url("../images/img-story-main.png");
+  height: 280px;
+  display: flex;
+  }
+
+  .so{
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+  }
 
 .horizontally{
   display: flex;
@@ -94,7 +118,7 @@ body {
   width: 300px;
   margin-bottom: 20px;
   flex-direction: column;
-}
+  }
 
 .orca{
   order:1;
@@ -111,36 +135,29 @@ body {
 .pic{
   display: flex;
   order:3;
-}
+  }
 
 .pic2{
   display: flex;
   order:4;
   }
 
-.image{
-  background-image: url("../images/img-story-main.png");
-  height: 280px;
-  display: flex;
-  }
-
-.so{
-  font-weight: bold;
-  font-size: 40px;
-  color: white;
-  text-align: left;
-  display: flex;
-  align-items: flex-start;
-}
-
 .pic{
   background-image: url("../images/fall.png");
-  display:flex;
-  height:280px;
-  width: 300px;
   margin-right: 20px;
-  background-repeat: no-repeat;
-}
+  }
+
+ .pic,
+ .pic2{
+   display:flex;
+   height:300px;
+   width: 300px;
+   background-repeat: no-repeat;
+ }
+
+.pic2{
+  background-image: url("../images/camera.png");
+  }
 
 .earth p {
   font-weight: bold;
@@ -153,14 +170,6 @@ body {
   width: 300px;
 }
 
-.pic2 {
-  background-image: url("../images/camera.png");
-  display:flex;
-  width: 300px;
-  height:280px;
-  background-repeat: no-repeat;
-}
-
 .camera p{
   font-weight: bold;
   font-size: 30px;
@@ -171,15 +180,14 @@ body {
   width: 300px;
 }
 
+/*Medium column*/
 .medium {
   display: inline-flex;
   width: 300px;
   height: 1390px;
   flex-direction:column;
   align-self: center;
-  margin-right: 30px;
-  margin-top: 35px;
-}
+  }
 
 .pic3{
   background-image: url("../images/img-story-cat.png");
@@ -187,22 +195,25 @@ body {
   height:300px;
   width:300px;
   margin-top:12px;
+  margin-bottom:12px;
   align-items: center;
 }
+
 .control p{
   font-weight: bold;
   font-size: 30px;
   color: white;
   text-align: center;
   display: flex;
-  }
+}
 
+/*Small*/
 .small {
   display: inline-flex;
   width: 240px;
   flex-direction:column;
-  margin-right: 30px;
-  margin-top: 35px;
+  margin: 0px;
+
 }
 
 .pic4{
@@ -220,4 +231,41 @@ h1{
   font-style: bold;
   font-size: 17px;
   text-align: center;
+  margin-bottom:30px;
 }
+
+.bites{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  position:relative;
+  }
+
+.por{
+  font-size: 16px;
+  font-weight: bold;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  text-align: left;
+  color: DimGray;
+  display:flex;
+  flex-direction: column;
+  width: 260px;
+  }
+
+.por p{
+  border: 0.5px solid DimGray;
+  padding: 11px 20px;
+}
+
+.footer{
+  display:flex;
+  justify-content: flex-end;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  width: 100%;
+  height: 350px;
+    }
